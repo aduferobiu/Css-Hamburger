@@ -1,0 +1,77 @@
+:root {
+    --primary-color: rgba(1, 79, 248, 0.6);
+    --secondary-color: rgba(255, 168, 7, 0.795);
+    --overlay-color: rgba(0, 0, 0, 0.7)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+    padding: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conatainer {
+    display: block;
+    margin: auto;
+    max-width: 960px;
+}
+
+.showcase {
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.showcase:before {
+    content: '';
+    background: url('../img/Aqua.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-content h1 {
+    font-size: 2.5rem;
+}
+
+.showcase-content p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem 1.2rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
